@@ -1,5 +1,8 @@
 import type { Config } from "tailwindcss";
 
+const colors = require("./themes/colors.ts").default;
+const { fontSize, lineHeight, fontWeight, fontFamilies } =
+  require("./themes/typography.ts").default;
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,9 +12,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        ...colors,
       },
+
+      fontSize: {
+        ...fontSize,
+      },
+
+      fontFamily: {
+        ...fontFamilies,
+      },
+
+      fontWeight: {
+        ...fontWeight,
+      },
+
+      lineHeight: {
+        ...lineHeight,
+      }
+
     },
   },
   plugins: [],
