@@ -12,7 +12,7 @@ const config: Config = {
         transparent: "transparent",
         black: "#000",
         white: "#fff",
-        bgPrimary: "#FFF6EA",
+        primary: "#FFF6EA",
         textPrimary: "#3B3030",
         secondary: "#FFEB55",
       },
