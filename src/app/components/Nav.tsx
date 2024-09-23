@@ -9,6 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { header } from "../constansts/Header";
 import Link from "next/link";
+import Button from "./Button";
 function Nav() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -44,9 +45,7 @@ function Nav() {
 
             <div className="flex gap-6">
               <div className="xs:flex items-center gap-10">
-                <button className="hidden lg:flex rounded-full border-solid border-2 border-gray-300 py-2 px-4 hover:bg-secondary hover:text-gray-100">
-                  Free Trial
-                </button>
+                <Button type="primary" href="#">Log in</Button>
               </div>
 
               <div className="lg:hidden flex items-center">
